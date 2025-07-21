@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.chronoheist.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Chrono Heist</name>
+    <description>The Time Loop Puzzle - A mind-bending heist game where you coordinate with clones of yourself through time loops!</description>
+    <author email="developer@chronoheist.com" href="https://chronoheist.com">
+        Chrono Heist Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    
+    <!-- Android specific settings -->
+    <platform name="android">
+        <allow-intent href="market:*" />
+        
+        <!-- Android Permissions -->
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        
+        <!-- Hardware acceleration for better performance -->
+        <preference name="android-windowHardwareAcceleratedrendering" value="true" />
+        <preference name="android-targetSdkVersion" value="34" />
+        <preference name="android-minSdkVersion" value="24" />
+    </platform>
+    
+    <!-- iOS specific settings -->
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    
+    <!-- Global Preferences -->
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-installLocation" value="auto" />
+    
+    <!-- Performance optimizations for games -->
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-windowSoftInputMode" value="adjustResize" />
+    <preference name="SplashScreenDelay" value="2000" />
+    <preference name="FadeSplashScreenDuration" value="500" />
+    
+    <!-- Allow navigation to external URLs -->
+    <allow-navigation href="*" />
+</widget>
